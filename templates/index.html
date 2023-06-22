@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Printing Hello world
-</body>
+<html>
+  <head>
+    <title>PDF Chatbot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="upload-container">
+      <label id="upload-label" for="file-upload">Upload PDF</label>
+      <input type="file" id="file-upload" accept=".pdf" />
+    </div>
+
+    <div id="chat-container">
+      <h1>Chatbot</h1>
+    </div>
+    <input
+      type="text"
+      id="user-input"
+      placeholder="Type your message..."
+      disabled
+    />
+    <button id="send-button" disabled>Send</button>
+    <script src="index.js"></script>
+  </body>
 </html>
